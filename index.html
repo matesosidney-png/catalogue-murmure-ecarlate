@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Murmures Écarlates | Catalogue</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.jpeg" class="logo">
+  <p class="slogan">Nos produits, Votre plaisir</p>
+</header>
+
+<section class="intro">
+  <p>Prenez le temps… Explorez… Découvrez des objets pensés pour sublimer chaque sensation.</p>
+</section>
+
+<section class="catalogue">
+
+  <div class="produit">
+    <img src="images/ecrin.jpg">
+    <h2>L'Écrin</h2>
+    <p>L’Écrin sublime chaque mouvement et transforme l’intime en trésor précieux.</p>
+    <span class="details">Silicone doux • finition bijou</span>
+    <a class="whatsapp-btn" href="https://wa.me/243995948808?text=Bonjour,%20je%20veux%20ce%20produit%20:%20L%27Écrin" target="_blank">Je veux ce produit</a>
+  </div>
+
+  <div class="produit">
+    <img src="images/eclosion.jpg">
+    <h2>L’Éclosion</h2>
+    <p>Délicate en apparence, surprenante en sensation.</p>
+    <span class="details">Rechargeable • discrète • stimulation</span>
+    <a class="whatsapp-btn" href="https://wa.me/243995948808?text=Bonjour,%20je%20veux%20ce%20produit%20:%20L%27Éclosion" target="_blank">Je veux ce produit</a>
+  </div>
+
+  <div class="produit">
+    <img src="images/muse.jpg">
+    <h2>La Muse</h2>
+    <p>Elle accompagne chaque exploration avec douceur ou intensité.</p>
+    <span class="details">Rechargeable • silicone velours • multi vitesses</span>
+    <a class="whatsapp-btn" href="https://wa.me/243995948808?text=Bonjour,%20je%20veux%20ce%20produit%20:%20La%20Muse" target="_blank">Je veux ce produit</a>
+  </div>
+
+  <div class="produit">
+    <img src="images/souffle.jpg">
+    <h2>Le Souffle</h2>
+    <p>Subtil et précis. Une onde invisible qui monte lentement… puis intensément.</p>
+    <span class="details">Technologie air pulsé • silencieux • rechargeable</span>
+    <a class="whatsapp-btn" href="https://wa.me/243995948808?text=Bonjour,%20je%20veux%20ce%20produit%20:%20Le%20Souffle" target="_blank">Je veux ce produit</a>
+  </div>
+
+  <div class="produit">
+    <img src="images/pilier.jpg">
+    <h2>Le Pilier</h2>
+    <p>La présence qui s’impose. Puissance et profondeur réunies.</p>
+    <span class="details">Vibrant • multi intensités • silicone premium</span>
+    <a class="whatsapp-btn" href="https://wa.me/243995948808?text=Bonjour,%20je%20veux%20ce%20produit%20:%20Le%20Pilier" target="_blank">Je veux ce produit</a>
+  </div>
+
+</section>
+
+<!-- Partie Lingerie -->
+<section class="lingerie-section">
+  <h2>Notre collection de lingeries</h2>
+  <p>À partir de 20€</p>
+  <p>Choisissez le modèle qui vous plait et cliquez sur le bouton - Envoyez nous une capture du modèle choisi</p>
+  <a class="whatsapp-btn" href="https://wa.me/243995948808" target="_blank">Je veux ce modèle</a>
+</section>
+
+<section>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">❮</button>
+
+    <div class="lingerie-carousel" id="lingerieCarousel">
+
+      <div class="lingerie-item">
+        <img src="lingerie/IMG_9265.jpeg">
+        <img src="lingerie/IMG_9266.jpeg">
+      </div>
+
+      <div class="lingerie-item">
+        <img src="lingerie/IMG_9267.jpeg">
+        <img src="lingerie/IMG_9268.jpeg">
+      </div>
+
+      <div class="lingerie-item">
+        <img src="lingerie/IMG_9273.jpeg">
+        <img src="lingerie/IMG_9272.jpeg">
+      </div>
+
+      <div class="lingerie-item">
+        <img src="lingerie/IMG_9269.jpeg">
+        <img src="lingerie/IMG_9270.jpeg">
+      </div>
+
+      <div class="lingerie-item">
+        <img src="lingerie/IMG_9274.jpeg">
+        <img src="lingerie/IMG_9271.jpeg">
+      </div>
+
+    </div>
+
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">❯</button>
+  </div>
+</section>
+
+<footer>
+  <img src="images/logo.jpeg" class="logo-footer">
+  <p>Contact</p>
+  <p>+243 99 59 48 808<br>+243 85 04 60 652</p>
+  <p>Instagram : <a href="https://www.instagram.com/murmure.ecarlate?igsh=dzhmOXEwMGxvOWI1">@murmure.ecarlate</a></p>
+</footer>
+
+<script>
+function scrollCarousel(direction){
+  const carousel = document.getElementById("lingerieCarousel");
+  carousel.scrollBy({
+    left: direction * 350,
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
